@@ -19,11 +19,11 @@ int main(void)
 	printf("%d ", last_digit_of_n);
 	if (last_digit_of_n > 5)
 	{
-		printf("and is greater than 5");
+		printf("and is greater than 5\n");
 	}
 	else if (last_digit_of_n == 0)
 	{
-		printf("and is 0");
+		printf("and is 0\n");
 	}
 	else
 		printf("and is less than 6 and not 0\n");
