@@ -12,7 +12,6 @@ int main(void)
 		putchar(i);
 		putchar(44);
 	}
-	putchar(57);
 	putchar(10);
-	return(0);
+	return (0);
 }
