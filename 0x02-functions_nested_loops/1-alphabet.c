@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * print_alphabet - Print desired characters of alphabet
+ */
 void print_alphabet(void)
 {
 	int i;
