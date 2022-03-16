@@ -7,7 +7,7 @@
  **/
 int main(void)
 {
-	char words[9] = "_puthchar";
+	char words[9] = "_putchar";
 	int i;
 
 	for (i = 0; i < 9; i++)
