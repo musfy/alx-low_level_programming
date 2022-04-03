@@ -1,22 +1,27 @@
 #include "main.h"
 /**
- * puts2 - print everty other character of a string
+ * puts_half - print everty other character of a string
  * @str:pointer char
  * return:void
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i, x;
+	int i, j;
 
 	i = 0;
-	x = 0;
-	while (str[i++])
+	while (str[i])
 	{
-		x++;
+		i++;
+		j = i / 2;
 	}
-	for (i = 0; i < x; i += 2)
+	if (i % 2)
 	{
-		_putchar(*(str + i));
+		j += 1;
+	}
+	while (j < i)
+	{
+		_putchar(str[j]);
+		j++;
 	}
 	_putchar('\n');
 }
