@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strcat - concatenates the source and dest strings
  * @dest: the destination string
@@ -6,8 +7,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	destlen = strlen(dest);
-	srclen = strlen(src);
+	int destlen = strlen(dest);
+	int srclen = strlen(src);
 	int i;
 
 	for (i = 0; i <= srclen; i++)
