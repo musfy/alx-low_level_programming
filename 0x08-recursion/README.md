@@ -5,11 +5,11 @@
 Resources
 Read or watch:
 
-<a href="https://alx-intranet.hbtn.io/rltoken/dzZB83Hm3lO7dScjhebAxw" >0x08. Recursion, introduction</a>
-<a href="https://alx-intranet.hbtn.io/rltoken/xYjKl3024oN58Bi_621_vQ">What on Earth is Recursion?</a>
-<a href="https://alx-intranet.hbtn.io/rltoken/u4ojc5CZpf4qiuQvmXCiOA">C - Recursion</a>
-<a href="https://alx-intranet.hbtn.io/rltoken/Wv-wffgpXelN9ZTrbmiOyA">C Programming Tutorial 85, Recursion pt.1</a>
-<a href="https://alx-intranet.hbtn.io/rltoken/7GVdI-KT-M1vOIzwEjSahQ">C Programming Tutorial 86, Recursion pt.2</a>
+<a href="https://alx-intranet.hbtn.io/rltoken/dzZB83Hm3lO7dScjhebAxw" >0x08. Recursion, introduction</a><br>
+<a href="https://alx-intranet.hbtn.io/rltoken/xYjKl3024oN58Bi_621_vQ">What on Earth is Recursion?</a><br>
+<a href="https://alx-intranet.hbtn.io/rltoken/u4ojc5CZpf4qiuQvmXCiOA">C - Recursion</a><br>
+<a href="https://alx-intranet.hbtn.io/rltoken/Wv-wffgpXelN9ZTrbmiOyA">C Programming Tutorial 85, Recursion pt.1</a><br>
+<a href="https://alx-intranet.hbtn.io/rltoken/7GVdI-KT-M1vOIzwEjSahQ">C Programming Tutorial 86, Recursion pt.2</a><br>
 
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
