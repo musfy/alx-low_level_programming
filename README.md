@@ -54,6 +54,6 @@ Here is the complete list of projects in this repository, each project has its d
 * [0x1C. C - Makefiles](https://github.com/musfy/alx-low_level_programming/tree/master/0x1C-makefiles)
 * [0x1D. C - Binary trees](https://github.com/jormao/binary_trees)
 * [0x1E. C - Search Algorithms](https://github.com/musfy/alx-low_level_programming/tree/master/0x1E-search_algorithms)
-**/
+
 ## Usage
 Each project and task contains the instructions to compile the code and execute the results.
