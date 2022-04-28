@@ -39,6 +39,7 @@ This is the first project made with C and consists of knowing some of its bases.
 
 
 # Learning Objectives
+<p>At the end of this project, you are expected to be able to <a href="https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
 * Why C programming is awesome
 * Who invented C
@@ -53,6 +54,76 @@ This is the first project made with C and consists of knowing some of its bases.
 * What is the official Holberton C coding style and how to check your code with betty-style
 * How to find the right header to include in your source code when using a standard library - function
 * How does the main function influence the return value of the program
+
+
+<h2>Requirements</h2>
+
+<h3>C</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be compiled on Ubuntu 20.04 LTS using <code>gcc</code>, using the options <code>-Wall -Werror -Wextra -pedantic -std=gnu89</code></li>
+<li>All your files should end with a new line</li>
+<li>A <code>README.md</code> file at the root of the repo, containing a description of the repository</li>
+<li>A <code>README.md</code> file, at the root of the folder of <em>this</em> project, containing a description of the project</li>
+<li>There should be no errors and no warnings during compilation</li>
+<li>You are not allowed to use <code>system</code></li>
+<li>Your code should use the <code>Betty</code> style. It will be checked using <a href="https://github.com/holbertonschool/Betty/blob/master/betty-style.pl" title="betty-style.pl" target="_blank">betty-style.pl</a> and <a href="https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl" title="betty-doc.pl" target="_blank">betty-doc.pl</a></li>
+</ul>
+
+<h3>Shell Scripts</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your scripts will be tested on Ubuntu 20.04 LTS</li>
+<li>All your scripts should be exactly two lines long (<code>$ wc -l file</code> should print 2)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/bin/bash</code></li>
+</ul>
+
+<h2>More Info</h2>
+
+<h3>Betty linter</h3>
+
+<p>To run the Betty linter just with command <code>betty &lt;filename&gt;</code>:</p>
+
+<ul>
+<li>Go to the <a href="https://github.com/holbertonschool/Betty" title="Betty" target="_blank">Betty</a> repository</li>
+<li>Clone the <a href="https://github.com/holbertonschool/Betty" title="repo" target="_blank">repo</a> to your local machine</li>
+<li><code>cd</code> into the Betty directory</li>
+<li>Install the linter with <code>sudo ./install.sh</code></li>
+<li><code>emacs</code> or <code>vi</code> a new file called <code>betty</code>, and copy the script below:</li>
+</ul>
+
+<pre><code>#!/bin/bash
+# Simply a wrapper script to keep you from having to use betty-style
+# and betty-doc separately on every item.
+# Originally by Tim Britton (@wintermanc3r), multiargument added by
+# Larry Madeo (@hillmonkey)
+
+BIN_PATH=&quot;/usr/local/bin&quot;
+BETTY_STYLE=&quot;betty-style&quot;
+BETTY_DOC=&quot;betty-doc&quot;
+
+if [ &quot;$#&quot; = &quot;0&quot; ]; then
+    echo &quot;No arguments passed.&quot;
+    exit 1
+fi
+
+for argument in &quot;$@&quot; ; do
+    echo -e &quot;\n========== $argument ==========&quot;
+    ${BIN_PATH}/${BETTY_STYLE} &quot;$argument&quot;
+    ${BIN_PATH}/${BETTY_DOC} &quot;$argument&quot;
+done
+</code></pre>
+<ul>
+<li>Once saved, exit file and change permissions to apply to all users with <code>chmod a+x betty</code></li>
+<li>Move the <code>betty</code> file into <code>/bin/</code> directory or somewhere else in your <code>$PATH</code> with <code>sudo mv betty /bin/</code></li>
+</ul>
+
+<p>You can now type <code>betty &lt;filename&gt;</code> to run the Betty linter!</p>
+
+
 
 # Tasks
 
@@ -93,7 +164,18 @@ int main(void)
 }
 $ amonkeyprogrammer@ubuntu:~/c/0x00$ 
 ```
+ 
 
+  
+    
+### Repo
+        
+          * GitHub repository: alx-low_level_programming
+          * Directory: 0x00-hello_world
+          * File: 0-preprocessor
+        
+
+  
 ## Compiler
 
 Write a script that compiles a C file but does not link.
@@ -126,6 +208,12 @@ $ amonkeyprogrammer@ubuntu:~/c/0x00$ cat -v main.o | head
 ^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^A^@>^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^B^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@@^@^K^@^H^@UHM-^IM-eM-8^@^@^@^@]M-C^@GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609^@^T^@^@^@^@^@^@^@^AzR^@^Ax^P^A^[^L^G^HM-^P^A^@^@^\^@^@^@^\^@^@^@^@^@^@^@^K^@^@^@^@A^N^PM-^F^BC^M^FF^L^G^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^D^@M-qM-^?^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^E^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^R^@^A^@^@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@main.c^@main^@^@^@^@ ^@^@^@^@^@^@^@^B^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@.symtab^@.strtab^@.shstrtab^@.text^@.data^@.bss^@.comment^@.note.GNU-stack^@.rela.eh_frame^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[^@^@^@^A^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@!^@^@^@^A^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@'^@^@^@^H^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@,^@^@^@^A^@^@^@0^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@5^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@5^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@J^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@8^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@E^@^@^@^D^@^@^@@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M- ^A^@^@^@^@^@^@^X^@^@^@^@^@^@^@    ^@^@^@^F^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^Q^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^A^@^@^@^@^@^@T^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^@^@^@^@^@^@^@M-X^@^@^@^@^@^@^@
 ^@^@^@^H^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@  ^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^P^A^@^@^@^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@$ amonkeyprogrammer@ubuntu:~/c/0x00$
 ```
+
+### Repo
+        
+          * GitHub repository: alx-low_level_programming
+          * Directory: 0x00-hello_world
+          * File: 1-compiler
 
 ## Assembler
 
@@ -179,13 +267,19 @@ main:
 $ amonkeyprogrammer@ubuntu:~/c/0x00$
 ```
 
+### Repo
+        
+          * GitHub repository: alx-low_level_programming
+          * Directory: 0x00-hello_world
+          * File: 2-assembler
+
 ## Name
 
 Write a script that compiles a C file and creates an executable named `cisfun`.
 
 * The C file name will be saved in the variable `$CFILE`
 
-**Solution:** [3-name](https://github.com/musfy/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
+**Solution:** [3-name](https://github.com/musfy/alx-low_level_programming/blob/master/0x00-hello_world/3-name)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/c/0x00$ export CFILE=main.c
@@ -207,6 +301,12 @@ $ amonkeyprogrammer@ubuntu:~/c/0x00$ ls
 100-intel       2-assembler  c       main.c  main.s
 $ amonkeyprogrammer@ubuntu:~/c/0x00$
 ```
+### Repo
+        
+          * GitHub repository: alx-low_level_programming
+          * Directory: 0x00-hello_world
+          * File: 3-name
+
 
 ## Hello, puts
 
