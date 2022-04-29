@@ -15,7 +15,7 @@ This is the first project made with C and consists of knowing some of its bases.
 <p><strong>Read or watch</strong>:</p>
 
 <ul>
-<li><a href="" title="Everything you need to know to start with C.pdf" target="_blank">Everything you need to know to start with C.pdf</a> (<em>You do not have to learn everything in there yet, but make sure you read it entirely first</em>)</li>
+<li><a href="https://github.com/musfy/alx-low_level_programming/blob/master/0x01-variables_if_else_while/Everything%20you%20need%20to%20know%20to%20start%20with%20C.pdf" title="Everything you need to know to start with C.pdf" target="_blank">Everything you need to know to start with C.pdf</a> (<em>You do not have to learn everything in there yet, but make sure you read it entirely first</em>)</li>
 <li><a href="https://en.wikipedia.org/wiki/Dennis_Ritchie" title="Dennis Ritchie" target="_blank">Dennis Ritchie</a> </li>
 <li><a href="https://www.youtube.com/watch?v=de2Hsvxaf8M" title="&quot;C&quot; Programming Language: Brian Kernighan" target="_blank">&ldquo;C&rdquo; Programming Language: Brian Kernighan</a> </li>
 <li><a href="https://www.youtube.com/watch?v=smGalmxPVYc" title="Why C Programming Is Awesome" target="_blank">Why C Programming Is Awesome</a> </li>
