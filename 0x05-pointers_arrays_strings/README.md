@@ -3,7 +3,7 @@
 ## Concepts
 
    * [Pointers and Arrays](https://github.com/musfy/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/arrayconcepts.md)
-   * [Data Structures]
+   * [Data Structures](https://github.com/musfy/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/data_structures.md)
       
 ### For this project, students are expected to look at these concepts:
    **Pointers and arrays**
