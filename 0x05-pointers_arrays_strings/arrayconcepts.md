@@ -466,7 +466,7 @@ int main(void)
 }
 </code></pre>
 
-<h3>Arrays</h3>
+# Arrays
 
 <p>Arrays in C are contiguous memory areas that hold a number of values of the same type. Unlike some other languages, in C, all elements of an array have the same type. To declare an array we use this syntax: <code>type var_name[number_of_elements];</code>, where <code>number_of_elements</code> is the number of elements of type <code>type</code> that we need. </p>
 
@@ -525,7 +525,7 @@ Address of &#39;a[4]&#39;: 0x7ffcbca77de0
 
 <p><img src="https://github.com/musfy/alx-low_level_programming/blob/master/digim/endmain.png" alt="" style="" />  </p>
 
-<h3>Pointers vs Arrays</h3>
+# Pointers vs Arrays
 
 <p>In C, <strong>an array is NOT a pointer</strong>, the variables we declare as arrays do not hold a memory address.</p>
 
@@ -720,7 +720,20 @@ sizeof(b): 98
 sizeof(&amp;b): 8
 </code></pre>
 
-<h3>Pointers Arithmetic</h3>
+#
+
+
+
+
+
+
+
+
+
+
+
+
+Pointers Arithmetic
 
 <p>Another way to access different elements of an array, is to use this other notation: <code>*(var + x)</code>, where <code>var</code> is the name of an array, and <code>x</code> is the (x+1)th element (starting counting elements at 0 of course) of this array. For instance if we declare:  </p>
 
@@ -838,7 +851,7 @@ int main(void)
 }
 </code></pre>
 
-<h3>Strings</h3>
+# Strings
 
 <p>Of course, we can also create an array of chars. It would work exactly the same way.  </p>
 
