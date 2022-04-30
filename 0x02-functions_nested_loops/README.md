@@ -514,8 +514,13 @@ $ amonkeyprogrammer@ubuntu:~/0x02$ ./10-add
 98
 $ amonkeyprogrammer@ubuntu:~/0x02$ 
 ```
+### Repo:
 
-## Holberton School, 98 Battery Street, the OG
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 10-add.c
+
+## 98 Battery Street, the OG
 
 Write a function that prints all natural numbers from `n` to `98`, followed by a new line.
 
@@ -526,14 +531,14 @@ Write a function that prints all natural numbers from `n` to `98`, followed by a
 * The last printed number should be `98`
 * You are allowed to use the standard library
 
-**Solution:** [11-print_to_98.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/11-print_to_98.c)
+**Solution:** [11-print_to_98.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/11-print_to_98.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 11-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 11-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -546,15 +551,20 @@ int main(void)
     print_to_98(-10);
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 11-main.c 11-print_to_98.c -o 11-98
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./11-98 
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 11-main.c 11-print_to_98.c -o 11-98
+julien@ubuntu:~/0x02$ ./11-98 
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 98
 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98
 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
-$ amonkeyprogrammer@ubuntu:~/0x02$ 
+julien@ubuntu:~/0x02$ 
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 11-print_to_98.c
 
 ## The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
 
@@ -564,14 +574,14 @@ Write a function that prints the `n` times table, starting with 0.
 * If `n` is greater than `15` or less than `0` the function should not print anything
 * Format: see example
 
-**Solution:** [100-times_table.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/100-times_table.c)
+**Solution:** [100-times_table.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/100-times_table.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 100-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 100-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code.
  *
  * Return: Always 0.
  */
@@ -586,8 +596,8 @@ int main(void)
     print_times_table(12);  
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 100-main.c 100-times_table.c -o 100-times_table
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./100-times_table 
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 100-main.c 100-times_table.c -o 100-times_table
+julien@ubuntu:~/0x02$ ./100-times_table 
 0,   0,   0,   0
 0,   1,   2,   3
 0,   2,   4,   6
@@ -614,7 +624,7 @@ $ amonkeyprogrammer@ubuntu:~/0x02$ ./100-times_table
 0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100, 110, 120
 0,  11,  22,  33,  44,  55,  66,  77,  88,  99, 110, 121, 132
 0,  12,  24,  36,  48,  60,  72,  84,  96, 108, 120, 132, 144
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./100-times_table | tr ' ' . | cat -e
+julien@ubuntu:~/0x02$ ./100-times_table | tr ' ' . | cat -e
 0,...0,...0,...0$
 0,...1,...2,...3$
 0,...2,...4,...6$
@@ -641,8 +651,14 @@ $
 0,..10,..20,..30,..40,..50,..60,..70,..80,..90,.100,.110,.120$
 0,..11,..22,..33,..44,..55,..66,..77,..88,..99,.110,.121,.132$
 0,..12,..24,..36,..48,..60,..72,..84,..96,.108,.120,.132,.144$
-$ amonkeyprogrammer@ubuntu:~/0x02$
+julien@ubuntu:~/0x02$ 
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 100-times_table
+
 
 ## Nature made the natural numbers; All else is the work of women
 
@@ -650,7 +666,14 @@ If we list all the natural numbers below `10` that are multiples of `3` or `5`, 
 
 * You are allowed to use the standard library
 
-**Solution:** [101-natural.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c)
+**Solution:** [101-natural.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c)
+
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 101-natural.c
+
 
 ## In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A
 
@@ -659,7 +682,14 @@ Write a program that prints the first 50 Fibonacci numbers, starting with `1` an
 * The numbers must be separated by comma, followed by a space `,` 
 * You are allowed to use the standard library
 
-**Solution:** [102-fibonacci.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c)
+**Solution:** [102-fibonacci.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c)
+
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 102-fibonacci.c
+
 
 ## Even Liber Abbaci
 
@@ -667,4 +697,12 @@ Each new term in the Fibonacci sequence is generated by adding the previous two 
 
 * You are allowed to use the standard library
 
-**Solution:** [103-fibonacci.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c)
+**Solution:** [103-fibonacci.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c)
+
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 103-fibonacci.c
+
+
