@@ -238,11 +238,11 @@ Write a function that prints the sign of a number.
 **Solution:** [5-sign.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/5-sign.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 5-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 5-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code.
  *
  * Return: Always 0.
  */
@@ -272,14 +272,19 @@ int main(void)
     _putchar('\n');
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 5-main.c 5-sign.c -o 5-sign
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./5-sign 
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
+julien@ubuntu:~/0x02$ ./5-sign 
 +, 1
 0, 0
 +, 1
 -, /
-$ amonkeyprogrammer@ubuntu:~/0x02$ 
+julien@ubuntu:~/0x02$
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 5-sign.c
 
 ## There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
 
@@ -287,15 +292,15 @@ Write a function that computes the absolute value of an integer.
 
 * Prototype: `int _abs(int)`;
 
-**Solution:** [6-abs.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/6-abs.c)
+**Solution:** [6-abs.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/6-abs.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 6-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 6-main.c
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -313,14 +318,20 @@ int main(void)
     printf("%d\n", r);
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 6-main.c 6-abs.c -o 6-abs
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./6-abs 
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs
+julien@ubuntu:~/0x02$ ./6-abs 
 1
 0
 1
 98
-$ amonkeyprogrammer@ubuntu:~/0x02$ 
+julien@ubuntu:~/0x02$
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 6-abs.c
+
 
 ## There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 
@@ -329,14 +340,14 @@ Write a function that prints the last digit of a number.
 * Prototype: `int print_last_digit(int);`
 * Returns the value of the last digit
 
-**Solution:** [7-print_last_digit.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/7-print_last_digit.c)
+**Solution:** [7-print_last_digit.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/7-print_last_digit.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 7-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 7-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -351,11 +362,17 @@ int main(void)
     _putchar('\n');
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./7-last_digit 
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
+julien@ubuntu:~/0x02$ ./7-last_digit 
 8044
-$ amonkeyprogrammer@ubuntu:~/0x02$
+julien@ubuntu:~/0x02$
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 7-print_last_digit.c
+
 
 ## I'm federal agent Jack Bauer, and today is the longest day of my life
 
@@ -363,14 +380,14 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
 
 * Prototype: `void jack_bauer(void);`
 
-**Solution:** [8-24_hours.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/8-24_hours.c)
+**Solution:** [8-24_hours.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/8-24_hours.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 8-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 8-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -379,8 +396,8 @@ int main(void)
     jack_bauer();
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 8-main.c 8-24_hours.c -o 8-24
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./8-24 | head
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24
+julien@ubuntu:~/0x02$ ./8-24 | head
 00:00
 00:01
 00:02
@@ -391,7 +408,7 @@ $ amonkeyprogrammer@ubuntu:~/0x02$ ./8-24 | head
 00:07
 00:08
 00:09
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./8-24 | tail
+julien@ubuntu:~/0x02$ ./8-24 | tail
 23:50
 23:51
 23:52
@@ -402,10 +419,15 @@ $ amonkeyprogrammer@ubuntu:~/0x02$ ./8-24 | tail
 23:57
 23:58
 23:59
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./8-24 | wc -l
+julien@ubuntu:~/0x02$ ./8-24 | wc -l
 1440
-$ amonkeyprogrammer@ubuntu:~/0x02$
+julien@ubuntu:~/0x02$ 
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 8-24_hours.c
 
 ## Learn your times table
 
@@ -414,14 +436,14 @@ Write a function that prints the 9 times table, starting with 0.
 * Prototype: `void times_table(void);`
 * Format: see example
 
-**Solution:** [9-times_table.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/9-times_table.c)
+**Solution:** [9-times_table.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/9-times_table.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x02$ cat 9-main.c
-#include "holberton.h"
+julien@ubuntu:~/0x02$ cat 9-main.c
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -430,7 +452,7 @@ int main(void)
     times_table();
     return (0);
 }
-$ amonkeyprogrammer@ubuntu:~/c/curriculum_by_$ amonkeyprogrammer/holbertonschool-low_level_programming/0x02$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 9-main.c 9-times_table.c -o 9-times_table
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 9-main.c 9-times_table.c -o 9-times_table
 ulien@ubuntu:~/0x02$ ./9-times_table | cat -e
 0,  0,  0,  0,  0,  0,  0,  0,  0,  0$
 0,  1,  2,  3,  4,  5,  6,  7,  8,  9$
@@ -442,7 +464,7 @@ ulien@ubuntu:~/0x02$ ./9-times_table | cat -e
 0,  7, 14, 21, 28, 35, 42, 49, 56, 63$
 0,  8, 16, 24, 32, 40, 48, 56, 64, 72$
 0,  9, 18, 27, 36, 45, 54, 63, 72, 81$
-$ amonkeyprogrammer@ubuntu:~/0x02$ ./9-times_table | tr ' ' . | cat -e
+julien@ubuntu:~/0x02$ ./9-times_table | tr ' ' . | cat -e
 0,..0,..0,..0,..0,..0,..0,..0,..0,..0$
 0,..1,..2,..3,..4,..5,..6,..7,..8,..9$
 0,..2,..4,..6,..8,.10,.12,.14,.16,.18$
@@ -453,8 +475,13 @@ $ amonkeyprogrammer@ubuntu:~/0x02$ ./9-times_table | tr ' ' . | cat -e
 0,..7,.14,.21,.28,.35,.42,.49,.56,.63$
 0,..8,.16,.24,.32,.40,.48,.56,.64,.72$
 0,..9,.18,.27,.36,.45,.54,.63,.72,.81$
-$ amonkeyprogrammer@ubuntu:~/0x02$
+julien@ubuntu:~/0x02$ 
 ```
+### Repo:
+
+* GitHub repository: alx-low_level_programming
+* Directory: 0x02-functions_nested_loops
+* File: 9-times_table.c
 
 ## a + b
 
@@ -462,7 +489,7 @@ Write a function that adds two integers and returns the result.
 
 * Prototype: `int add(int, int);`
 
-**Solution:** [10-add.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x02-functions_nested_loops/10-add.c)
+**Solution:** [10-add.c](https://github.com/musfy/alx-low_level_programming/blob/master/0x02-functions_nested_loops/10-add.c)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/$ cat 10-main.c
