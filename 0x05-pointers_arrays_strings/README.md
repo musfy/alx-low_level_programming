@@ -2,16 +2,12 @@
 
 ## Concepts
 
-  
+   * [Pointers and Arrays](https://github.com/musfy/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/arrayconcepts.md)
+   * [Data Structures](https://github.com/musfy/alx-low_level_programming/blob/master/0x05-pointers_arrays_strings/data_structures.md)
       
-  ### For this project, students are expected to look at these concepts:
-    
-          **Pointers and arrays**()
-          </li>
-          <li>
-            <a href="/concepts/120">Data Structures</a>
-          </li>
-     **Solution:** [0-reset_to_98.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/0-reset_to_98.c)
+### For this project, students are expected to look at these concepts:
+   **Pointers and arrays**
+   **Data Structures**
    
 # Learning Objectives
 
